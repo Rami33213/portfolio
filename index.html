@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rami Alsalameh - Backend Developer & AI Specialist">
+    <meta name="keywords" content="Backend Developer, AI, Laravel, FastAPI, Flutter, Python">
+    <meta name="author" content="Rami Alsalameh">
+    <title>Rami Alsalameh | Backend & AI Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>Rami<span class="highlight">.</span></h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About" data-ar="عني">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" data-en="Experience" data-ar="الخبرات">Experience</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="lang-toggle" title="Change Language">
+                        <span class="lang-text">AR</span>
+                    </button>
+                    <button class="calendar-btn" id="calendar-btn" title="Calendar">
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Calendar Modal -->
+    <div class="calendar-modal" id="calendar-modal">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button class="calendar-close" id="calendar-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 id="calendar-month-year"></h3>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days" id="calendar-days"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span data-en="Hi, I'm" data-ar="مرحباً، أنا">Hi, I'm</span>
+                        <span class="highlight">Rami Alsalameh</span>
+                    </h1>
+                    <h2 class="hero-subtitle" data-en="Backend Developer | AI Specialist" data-ar="مطور باك إند | متخصص ذكاء صنعي">
+                        Backend Developer | AI Specialist
+                    </h2>
+                    <p class="hero-description" data-en="Specialized software developer in Artificial Intelligence and Backend development using Laravel & FastAPI. Passionate about building intelligent systems that solve real-world problems." data-ar="مطور برمجيات متخصص في الذكاء الصنعي وتطوير الباك إند باستخدام Laravel و FastAPI. شغوف ببناء أنظمة ذكية تحل مشاكل حقيقية.">
+                        Specialized software developer in Artificial Intelligence and Backend development using Laravel & FastAPI. Passionate about building intelligent systems that solve real-world problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary" data-en="View Projects" data-ar="شاهد المشاريع">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Rami33213" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ralsalameh39@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/963954169212" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <div class="circle-bg"></div>
+                        <i class="fas fa-code code-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About Me" data-ar="عني">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="I'm a passionate Backend Developer and AI Specialist from Syria, currently working as a Backend & AI Developer at YaCode (Netherlands-based company). I specialize in building robust CRM systems and intelligent applications." data-ar="أنا مطور باك إند ومتخصص ذكاء صنعي من سوريا، أعمل حالياً كمطور باك إند وذكاء صنعي في شركة YaCode (شركة هولندية). متخصص في بناء أنظمة CRM قوية وتطبيقات ذكية.">
+                        I'm a passionate Backend Developer and AI Specialist from Syria, currently working as a Backend & AI Developer at YaCode (Netherlands-based company). I specialize in building robust CRM systems and intelligent applications.
+                    </p>
+                    <p data-en="With expertise in Laravel, FastAPI, and Flutter, combined with strong AI/ML skills, I create end-to-end solutions that are both powerful and user-friendly." data-ar="مع خبرة في Laravel و FastAPI و Flutter، بالإضافة لمهارات قوية في الذكاء الصنعي، أقوم بإنشاء حلول متكاملة قوية وسهلة الاستخدام.">
+                        With expertise in Laravel, FastAPI, and Flutter, combined with strong AI/ML skills, I create end-to-end solutions that are both powerful and user-friendly.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4 data-en="Education" data-ar="التعليم">Education</h4>
+                                <p data-en="B.Sc. Computer Engineering (AI)" data-ar="بكالوريوس هندسة معلوماتية (ذكاء صنعي)">B.Sc. Computer Engineering (AI)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-en="Location" data-ar="الموقع">Location</h4>
+                                <p>Syria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-en="Languages" data-ar="لغات البرمجة">Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PHP</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Dart</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-en="AI & ML" data-ar="الذكاء الصنعي">AI & ML</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>TensorFlow</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Computer Vision</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-en="Backend" data-ar="الباك إند">Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Laravel</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>FastAPI</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-en="Frontend & Mobile" data-ar="الفرونت إند والموبايل">Frontend & Mobile</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Flutter</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-en="Database" data-ar="قواعد البيانات">Database</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-en="Tools" data-ar="الأدوات">Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Postman</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="additional-skills">
+                <h3 data-en="Additional Skills" data-ar="مهارات إضافية">Additional Skills</h3>
+                <div class="tags">
+                    <span class="tag">Software Design Patterns</span>
+                    <span class="tag">Use Case Diagrams</span>
+                    <span class="tag">Sequence Diagrams</span>
+                    <span class="tag">ERD Design</span>
+                    <span class="tag">System Architecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects" data-ar="المشاريع المميزة">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthy Heart</h3>
+                        <p data-en="A comprehensive heart disease tracking application featuring 4 AI-powered features: rPPG heart rate measurement from forehead camera, heart attack prediction, ECG analysis, and an expert system." data-ar="تطبيق شامل لتتبع أمراض القلب يحتوي على 4 ميزات ذكاء صنعي: قياس النبض من كاميرا الجبين، التنبؤ بالنوبات القلبية، تحليل مخطط ECG، ونظام خبير.">
+                            A comprehensive heart disease tracking application featuring 4 AI-powered features: rPPG heart rate measurement from forehead camera, heart attack prediction, ECG analysis, and an expert system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Rami33213/Back-End-Healthy_Heart" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-en="View Code" data-ar="عرض الكود">View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI HR System</h3>
+                        <p data-en="An intelligent employee management system powered by AI. Developed the complete backend using Laravel, providing automated HR processes and smart analytics." data-ar="نظام ذكي لإدارة الموظفين مدعوم بالذكاء الصنعي. قمت بتطوير الباك إند الكامل باستخدام Laravel، مع عمليات موارد بشرية آلية وتحليلات ذكية.">
+                            An intelligent employee management system powered by AI. Developed the complete backend using Laravel, providing automated HR processes and smart analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>rPPG Heart Rate Feature</h3>
+                        <p data-en="Advanced feature for measuring heart rate using phone camera, achieving MAE of 0.35-3.67 through color variations analysis in forehead and cheek regions." data-ar="ميزة متقدمة لقياس نبض القلب باستخدام كاميرا الهاتف، بدقة MAE تصل إلى 0.35-3.67 من خلال تحليل التغيرات اللونية في مناطق الجبين والوجنتين.">
+                            Advanced feature for measuring heart rate using phone camera, achieving MAE of 0.35-3.67 through color variations analysis in forehead and cheek regions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Signal Processing</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-en="Work Experience" data-ar="الخبرات العملية">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2025 - Present</div>
+                        <h3>Backend & AI Developer</h3>
+                        <h4>YaCode (Netherlands)</h4>
+                        <p data-en="Working on CRM system development with focus on backend architecture and AI integration. Building scalable APIs and implementing intelligent features." data-ar="العمل على تطوير نظام CRM مع التركيز على معمارية الباك إند ودمج الذكاء الصنعي. بناء APIs قابلة للتوسع وتنفيذ ميزات ذكية.">
+                            Working on CRM system development with focus on backend architecture and AI integration. Building scalable APIs and implementing intelligent features.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Laravel</span>
+                            <span>FastAPI</span>
+                            <span>AI Integration</span>
+                            <span>CRM Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">3 Months</div>
+                        <h3>Data Entry Specialist</h3>
+                        <h4>Lween Company, Damascus</h4>
+                        <p data-en="Managed data entry operations and database maintenance, ensuring data accuracy and integrity." data-ar="إدارة عمليات إدخال البيانات وصيانة قواعد البيانات، مع ضمان دقة وسلامة البيانات.">
+                            Managed data entry operations and database maintenance, ensuring data accuracy and integrity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h2 class="section-title" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Build inDrive & UBER Clone App</h4>
+                        <p>Flutter & Firebase 2025</p>
+                        <div class="cert-info">
+                            <span><i class="fas fa-graduation-cap"></i> Udemy</span>
+                            <span><i class="fas fa-calendar"></i> Aug 2025</span>
+                            <span><i class="fas fa-clock"></i> 9 hours</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Flutter, Node.js, Express, MongoDB</h4>
+                        <p>Build Multi-Store App</p>
+                        <div class="cert-info">
+                            <span><i class="fas fa-graduation-cap"></i> Udemy</span>
+                            <span><i class="fas fa-calendar"></i> Sept 2025</span>
+                            <span><i class="fas fa-clock"></i> 50 hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
+            <p class="section-subtitle" data-en="Feel free to reach out for collaborations or just a friendly chat!" data-ar="لا تتردد في التواصل للتعاون أو حتى محادثة ودية!">
+                Feel free to reach out for collaborations or just a friendly chat!
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
+                            <a href="mailto:ralsalameh39@gmail.com">ralsalameh39@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
+                            <a href="tel:+963954169212">+963 954 169 212</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Rami33213" target="_blank">@Rami33213</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rami Alsalameh. <span data-en="All Rights Reserved" data-ar="جميع الحقوق محفوظة">All Rights Reserved</span></p>
+            <div class="footer-social">
+                <a href="https://github.com/Rami33213" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ralsalameh39@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/963954169212" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
