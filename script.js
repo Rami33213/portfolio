@@ -24,7 +24,7 @@ const langToggle = document.getElementById('lang-toggle');
 const langText = document.querySelector('.lang-text');
 
 // Load saved language
-const currentLang = localStorage.getItem('language') || 'en';
+let currentLang = localStorage.getItem('language') || 'en';
 setLanguage(currentLang);
 
 langToggle.addEventListener('click', () => {
@@ -328,3 +328,4 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(emailLink => {
         });
     });
 });
+
