@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rami Alsalameh — Laravel Backend Developer & AI Integration Specialist. Building intelligent systems with Laravel, FastAPI & Flutter.">
+    <meta name="keywords" content="Rami Alsalameh, Backend Developer, AI, Laravel, FastAPI, Flutter, Syria">
+    <meta name="author" content="Rami Alsalameh">
+    <meta property="og:title" content="Rami Alsalameh | Backend & AI Developer">
+    <meta property="og:description" content="Laravel Backend Developer & AI Integration Specialist">
+    <meta property="og:type" content="website">
+    <title>Rami Alsalameh | Backend & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-effects" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <div class="loader" id="loader">
+        <div class="loader-ring"></div>
+        <span class="loader-text">RA</span>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container nav-wrap">
+            <a href="#home" class="logo">
+                <span class="logo-mark">R</span>
+                <span class="logo-name">Rami<span class="accent">.</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="icon-btn lang-btn" id="lang-toggle" aria-label="Toggle language">
+                    <span id="lang-label">AR</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="badge" data-i18n="hero.badge">Available for opportunities</div>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.greeting">Hi, I'm</span>
+                        <span class="gradient-text">Rami Alsalameh</span>
+                    </h1>
+                    <p class="hero-role">
+                        <span id="typed-text"></span><span class="cursor-blink">|</span>
+                    </p>
+                    <p class="hero-desc" data-i18n="hero.desc">
+                        Laravel Backend Developer & AI Integration Specialist. I build scalable APIs, intelligent microservices, and full-stack solutions that solve real-world problems.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            <span data-i18n="hero.cta1">View Projects</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="hero.cta2">Get In Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Rami33213" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:ralsalameh39@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/963954169212" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/rami.alsalameh" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal" data-delay="200">
+                    <div class="photo-frame">
+                        <div class="photo-glow"></div>
+                        <img src="assets/profile.png" alt="Rami Alsalameh" class="profile-photo" width="420" height="520" loading="eager">
+                        <div class="photo-badge">
+                            <i class="fas fa-circle status-dot"></i>
+                            <span data-i18n="hero.status">Open to work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container stats-bar reveal" data-delay="400">
+                <div class="stat">
+                    <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="stats.exp">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="stats.projects">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="169">0</span>
+                    <span class="stat-label" data-i18n="stats.credits">Academic Credits</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="3">0</span>
+                    <span class="stat-label" data-i18n="stats.langs">Languages</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="about.tag">About Me</span>
+                    <h2 class="section-title" data-i18n="about.title">Who I Am</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p data-i18n="about.p1">I'm a Backend Developer and AI Integration Specialist from Damascus, Syria. Currently working at YaCode B.V. (Netherlands) building CRM systems with Laravel and integrating AI microservices via FastAPI.</p>
+                        <p data-i18n="about.p2">Graduating from Arab International University with a B.Sc. in Artificial Intelligence & Software Engineering. I combine strong backend architecture skills with hands-on AI/ML experience — from computer vision and rPPG signal processing to NLP-powered learning platforms.</p>
+                        <p data-i18n="about.p3">Former Head of IT & Media Office at AIU Student Union. Passionate about clean code, scalable systems, and building technology that makes a real impact.</p>
+                    </div>
+                    <div class="about-cards reveal" data-delay="150">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h4 data-i18n="about.edu">Education</h4>
+                                <p data-i18n="about.eduVal">B.Sc. AI & Software Engineering — AIU</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <h4 data-i18n="about.loc">Location</h4>
+                                <p data-i18n="about.locVal">Damascus, Syria — Remote</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <h4 data-i18n="about.role">Current Role</h4>
+                                <p data-i18n="about.roleVal">Backend & AI Developer @ YaCode</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-language"></i></div>
+                            <div>
+                                <h4 data-i18n="about.langs">Languages</h4>
+                                <p data-i18n="about.langsVal">Arabic · English B2 · German A2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="skills.tag">Expertise</span>
+                    <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
+                </div>
+                <div class="skills-bento reveal">
+                    <div class="skill-group skill-group-lg">
+                        <div class="skill-group-header">
+                            <i class="fas fa-server"></i>
+                            <h3 data-i18n="skills.backend">Backend Development</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag featured">Laravel</span>
+                            <span class="skill-tag featured">PHP</span>
+                            <span class="skill-tag featured">FastAPI</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">Authentication</span>
+                            <span class="skill-tag">CRM Systems</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <i class="fas fa-brain"></i>
+                            <h3 data-i18n="skills.ai">AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag featured">TensorFlow</span>
+                            <span class="skill-tag featured">Computer Vision</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Model Fine-tuning</span>
+                            <span class="skill-tag">Signal Processing</span>
+                            <span class="skill-tag">rPPG</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <i class="fas fa-mobile-screen"></i>
+                            <h3 data-i18n="skills.mobile">Mobile & Frontend</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag featured">Flutter</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">Provider</span>
+                            <span class="skill-tag">GetX</span>
+                            <span class="skill-tag">Responsive UI</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <i class="fas fa-database"></i>
+                            <h3 data-i18n="skills.data">Database & Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">ERD Design</span>
+                            <span class="skill-tag featured">Git</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+                    <div class="skill-group skill-group-wide">
+                        <div class="skill-group-header">
+                            <i class="fas fa-sitemap"></i>
+                            <h3 data-i18n="skills.arch">Architecture & Design</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">System Architecture</span>
+                            <span class="skill-tag">UML Modeling</span>
+                            <span class="skill-tag">Use Case Diagrams</span>
+                            <span class="skill-tag">Sequence Diagrams</span>
+                            <span class="skill-tag">Design Patterns</span>
+                            <span class="skill-tag">Technical Documentation</span>
+                            <span class="skill-tag">Workflow Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="projects.tag">Portfolio</span>
+                    <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal featured-project">
+                        <div class="project-visual heart">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-type" data-i18n="projects.p1type">Pre-Graduation · AI Health</span>
+                                <span class="project-date">Sep 2025 — Jan 2026</span>
+                            </div>
+                            <h3 data-i18n="projects.p1title">Smart Heart Health Monitoring System</h3>
+                            <p data-i18n="projects.p1desc">AI-powered cardiovascular health system with rPPG-based heart rate estimation, ECG signal analysis, real-time risk prediction, and multimodal AI pipeline combining computer vision, signal processing, and symptom-based inference.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span><span>Laravel</span><span>FastAPI</span><span>TensorFlow</span><span>Computer Vision</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Rami33213/Back-End-Healthy_Heart" target="_blank" rel="noopener"><i class="fab fa-github"></i> <span data-i18n="projects.code">Source Code</span></a>
+                                <a href="https://github.com/Rami33213/Healthy_heart_Junior" target="_blank" rel="noopener"><i class="fab fa-github"></i> Mobile App</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-delay="100">
+                        <div class="project-visual ielts">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-type" data-i18n="projects.p2type">Graduation Project · EdTech</span>
+                                <span class="project-date">Jun 2026 — Present</span>
+                            </div>
+                            <h3 data-i18n="projects.p2title">AI-Powered IELTS Prep Platform</h3>
+                            <p data-i18n="projects.p2desc">Intelligent IELTS preparation platform with mobile app and web admin dashboard. NLP and speech processing for personalized study plans, automated skill assessment, and interactive exam preparation.</p>
+                            <div class="project-tech">
+                                <span>Laravel</span><span>Flutter</span><span>NLP</span><span>FastAPI</span><span>Speech Processing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-delay="200">
+                        <div class="project-visual hr">
+                            <i class="fas fa-users-gear"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-type" data-i18n="projects.p3type">Senior Project · HR Tech</span>
+                                <span class="project-date">Dec 2024 — Present</span>
+                            </div>
+                            <h3 data-i18n="projects.p3title">AI HR Management System</h3>
+                            <p data-i18n="projects.p3desc">Full-stack AI-powered HR platform with CV parsing, automated job matching, promotion prediction, and resignation forecasting using ML models. Led backend architecture with Laravel REST APIs and FastAPI microservices.</p>
+                            <div class="project-tech">
+                                <span>Laravel</span><span>FastAPI</span><span>Python</span><span>MySQL</span><span>ML</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-delay="100">
+                        <div class="project-visual ride">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-type" data-i18n="projects.p4type">Mobile · Tamkeen</span>
+                                <span class="project-date">Aug 2024 — Mar 2025</span>
+                            </div>
+                            <h3 data-i18n="projects.p4title">Ride-Hailing & E-Commerce Apps</h3>
+                            <p data-i18n="projects.p4desc">Built Uber-like ride-hailing app with real-time GPS tracking and OLX-style e-commerce platform. Advanced state management with Provider & GetX, modern responsive UI across devices.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span><span>Firebase</span><span>Provider</span><span>GetX</span><span>Maps API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.tamkeen-dev.com" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Tamkeen</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="exp.tag">Career</span>
+                    <h2 class="section-title" data-i18n="exp.title">Work Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Nov 2025 — Present</span>
+                                <span class="timeline-loc"><i class="fas fa-map-pin"></i> Amsterdam, NL</span>
+                            </div>
+                            <h3 data-i18n="exp.e1title">Laravel Backend Developer | AI Integrations</h3>
+                            <h4>YaCode B.V.</h4>
+                            <p data-i18n="exp.e1desc">Designing scalable backend services with Laravel, building RESTful APIs, CRM features, and workflow automation. Integrating AI models via FastAPI microservices with fine-tuning for domain-specific use cases.</p>
+                            <div class="timeline-tags"><span>Laravel</span><span>FastAPI</span><span>CRM</span><span>AI Integration</span></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="100">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Nov 2025 — Mar 2026</span>
+                                <span class="timeline-loc"><i class="fas fa-map-pin"></i> NYC, US (Remote)</span>
+                            </div>
+                            <h3 data-i18n="exp.e2title">AI Data Collection & Annotation Specialist</h3>
+                            <h4>AI Astroleb</h4>
+                            <p data-i18n="exp.e2desc">Collected and validated large-scale datasets (images, videos) for AI training. Performed annotation, quality assurance, data cleaning, and preprocessing for machine learning applications.</p>
+                            <div class="timeline-tags"><span>Data Annotation</span><span>Computer Vision</span><span>QA</span></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="200">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Dec 2024 — Present</span>
+                                <span class="timeline-loc"><i class="fas fa-map-pin"></i> Damascus, SY</span>
+                            </div>
+                            <h3 data-i18n="exp.e3title">Software Developer — Freelancer</h3>
+                            <h4 data-i18n="exp.e3company">Independent / Graduation Project</h4>
+                            <p data-i18n="exp.e3desc">Led development of AI-powered HR system as senior graduation project. Full-stack implementation with Laravel, REST APIs, ML models via FastAPI, and Flutter frontend integration.</p>
+                            <div class="timeline-tags"><span>Laravel</span><span>FastAPI</span><span>Flutter</span><span>ML</span></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="100">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Aug 2024 — Mar 2025</span>
+                                <span class="timeline-loc"><i class="fas fa-map-pin"></i> Damascus, SY</span>
+                            </div>
+                            <h3 data-i18n="exp.e4title">Flutter Developer</h3>
+                            <h4>Tamkeen</h4>
+                            <p data-i18n="exp.e4desc">Developed ride-hailing and e-commerce mobile applications using Flutter with real-time location tracking, advanced state management, and modern responsive UI design.</p>
+                            <div class="timeline-tags"><span>Flutter</span><span>Firebase</span><span>Maps</span></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal" data-delay="200">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Oct 2024 — Feb 2025</span>
+                                <span class="timeline-loc"><i class="fas fa-map-pin"></i> Damascus, SY</span>
+                            </div>
+                            <h3 data-i18n="exp.e5title">Data Entry & Collection Assistant</h3>
+                            <h4>Laween</h4>
+                            <p data-i18n="exp.e5desc">Collected, verified, and organized business and tourism data. Ensured data quality, consistency, and completeness across company databases and CMS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certs -->
+                <div class="dual-section reveal">
+                    <div class="dual-block">
+                        <h3 class="dual-title"><i class="fas fa-graduation-cap"></i> <span data-i18n="edu.title">Education</span></h3>
+                        <div class="edu-card">
+                            <h4 data-i18n="edu.degree">B.Sc. Artificial Intelligence & Software Engineering</h4>
+                            <p class="edu-school">Arab International University (AIU)</p>
+                            <p class="edu-detail" data-i18n="edu.detail">Oct 2022 — Jun 2026 · 169 Credit Hours · Daraa, Syria</p>
+                            <p class="edu-extra" data-i18n="edu.extra">Head of IT & Media Office — Student Union. Applied AI research in rPPG heart-rate estimation.</p>
+                        </div>
+                    </div>
+                    <div class="dual-block">
+                        <h3 class="dual-title"><i class="fas fa-award"></i> <span data-i18n="cert.title">Certifications</span></h3>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <div class="cert-icon"><i class="fab fa-udemy"></i></div>
+                                <div>
+                                    <h4>inDrive & Uber Clone App</h4>
+                                    <p>Flutter & Firebase · Udemy · Aug 2025 · 9h</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon"><i class="fab fa-udemy"></i></div>
+                                <div>
+                                    <h4>Multi-Store E-Commerce App</h4>
+                                    <p>Flutter, Node.js, Express, MongoDB · Udemy · Sep 2025 · 50h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="contact.tag">Contact</span>
+                    <h2 class="section-title" data-i18n="contact.title">Let's Work Together</h2>
+                    <p class="section-sub" data-i18n="contact.sub">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+                </div>
+                <div class="contact-grid reveal">
+                    <a href="mailto:ralsalameh39@gmail.com" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4 data-i18n="contact.email">Email</h4>
+                        <p>ralsalameh39@gmail.com</p>
+                    </a>
+                    <a href="tel:+963954169212" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h4 data-i18n="contact.phone">Phone</h4>
+                        <p>+963 954 169 212</p>
+                    </a>
+                    <a href="https://github.com/Rami33213" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <p>@Rami33213</p>
+                    </a>
+                    <a href="https://wa.me/963954169212" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h4>WhatsApp</h4>
+                        <p data-i18n="contact.wa">Message me</p>
+                    </a>
+                    <a href="https://instagram.com/rami.alsalameh" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <h4>Instagram</h4>
+                        <p>@rami.alsalameh</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 <strong>Rami Alsalameh</strong>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            <div class="footer-social">
+                <a href="https://github.com/Rami33213" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="mailto:ralsalameh39@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/963954169212" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/rami.alsalameh" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
